@@ -6,7 +6,8 @@ It contains some utility Prospector profiles.
 
 ```yaml
 inherits:
-  - utils:no-design-checks.yaml
+  - utils:base
+  - utils:no-design-checks
 ```
 
 ## Contributing

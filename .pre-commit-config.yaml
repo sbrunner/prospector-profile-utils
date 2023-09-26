@@ -3,6 +3,7 @@ ci:
   skip:
     - copyright
     - ripsecrets
+    - jsonschema-validator
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -82,3 +83,8 @@ repos:
       - id: pyupgrade
         args:
           - --py39-plus
+  - repo: https://github.com/sbrunner/jsonschema-validator
+    rev: 0.1.0
+    hooks:
+      - id: jsonschema-validator
+        files: ^ci/config\.yaml$

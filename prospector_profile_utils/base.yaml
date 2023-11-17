@@ -1,5 +1,7 @@
 strictness: veryhigh
 
+max-line-length: 110
+
 mypy:
   run: true
 

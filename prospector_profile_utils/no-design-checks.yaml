@@ -10,3 +10,4 @@ pylint:
     - too-many-locals
     - too-many-statements
     - too-many-boolean-expressions
+    - no-else-return

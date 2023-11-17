@@ -2,7 +2,6 @@ pylint:
   disable:
     - too-many-ancestors
     - too-many-instance-attributes
-    - too-few-public-methods
     - too-many-public-methods
     - too-many-return-statements
     - too-many-branches
@@ -10,4 +9,6 @@ pylint:
     - too-many-locals
     - too-many-statements
     - too-many-boolean-expressions
+    - too-many-lines
+    - too-few-public-methods
     - no-else-return

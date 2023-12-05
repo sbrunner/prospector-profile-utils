@@ -7,7 +7,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: detect-private-key
       - id: check-merge-conflict
@@ -20,7 +20,7 @@ repos:
       - id: trailing-whitespace
       - id: mixed-line-ending
   - repo: https://github.com/sbrunner/hooks
-    rev: 0.3.2
+    rev: 0.5.0
     hooks:
       - id: copyright
       - id: workflows-require-timeout
@@ -34,8 +34,8 @@ repos:
       - id: prettier
         additional_dependencies:
           - prettier@3.1.0 # npm
-          - prettier-plugin-sh@0.12.8 # npm
-          - prettier-plugin-toml@0.3.5 # npm
+          - prettier-plugin-sh@0.13.1 # npm
+          - prettier-plugin-toml@0.4.0 # npm
   - repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.9.0.6
     hooks:
@@ -45,7 +45,7 @@ repos:
     hooks:
       - id: git-check
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.21.0
+    rev: 0.27.2
     hooks:
       - id: check-github-workflows
       - id: check-renovate
@@ -65,7 +65,7 @@ repos:
     hooks:
       - id: ripsecrets
   - repo: https://github.com/psf/black
-    rev: 23.1.0
+    rev: 23.11.0
     hooks:
       - id: black
         exclude: README\.md
@@ -74,11 +74,11 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/PyCQA/autoflake
-    rev: v2.0.2
+    rev: v2.2.1
     hooks:
       - id: autoflake
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.2
+    rev: v3.15.0
     hooks:
       - id: pyupgrade
         args:

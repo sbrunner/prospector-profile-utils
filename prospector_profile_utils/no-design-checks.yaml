@@ -13,3 +13,4 @@ pylint:
     - too-many-nested-blocks
     - too-few-public-methods
     - no-else-return
+    - no-else-continue

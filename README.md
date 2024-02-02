@@ -4,9 +4,16 @@ It contains some utility Prospector profiles.
 
 ## Usage
 
+```bash
+pip install prospector-profile-utils
+```
+
+Then, in your `.prospector.yaml` file, you can use the profiles like this:
+
 ```yaml
 inherits:
   - utils:base
+  - utils:fix
   - utils:no-design-checks
 ```
 

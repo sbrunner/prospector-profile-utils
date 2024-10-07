@@ -2,6 +2,10 @@ strictness: veryhigh
 
 max-line-length: 110
 
+pylint:
+  enabled:
+    - useless-suppression
+
 mypy:
   run: true
 

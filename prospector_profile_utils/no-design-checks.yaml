@@ -11,6 +11,7 @@ pylint:
     - too-many-boolean-expressions
     - too-many-lines
     - too-many-nested-blocks
+    - too-many-positional-arguments
     - too-few-public-methods
     - no-else-return
     - no-else-continue

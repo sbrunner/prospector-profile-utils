@@ -8,6 +8,10 @@ pylint:
 
 mypy:
   run: true
+  options:
+    python-version: '3.9'
+    ignore-missing-imports: true
+    strict: true
 
 bandit:
   run: true

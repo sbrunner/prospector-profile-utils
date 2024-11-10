@@ -14,6 +14,7 @@ Then, in your `.prospector.yaml` file, you can use the profiles like this:
 inherits:
   - utils:base
   - utils:fix
+  - utils:c2cwsgiutils
   - utils:no-design-checks
 ```
 

@@ -33,10 +33,13 @@ ruff:
       I: true # isort
       S: true # flake8-bandit
       D: true # pydocstyle
-  disabled:
+    fix: true
+  disable:
     - S101 # Use of assert detected
     - SIM105 # suppressible-exception (slow code)
     - D100 # Missing docstring in public module
+    - D104 # Missing docstring in public package
+    - D105 # Missing docstring in magic method
     - E501 # Line too long (should be done by formatter, length not configurable in prospector)
 
 mccabe:

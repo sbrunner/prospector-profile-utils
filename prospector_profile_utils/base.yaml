@@ -34,7 +34,7 @@ ruff:
       S: true # flake8-bandit
       D: true # pydocstyle
     fix: true
-  disabled:
+  disable:
     - S101 # Use of assert detected
     - SIM105 # suppressible-exception (slow code)
     - D100 # Missing docstring in public module

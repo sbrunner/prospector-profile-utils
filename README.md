@@ -16,6 +16,7 @@ inherits:
   - utils:fix
   - utils:c2cwsgiutils
   - utils:no-design-checks
+  - utils:unsafe
 ```
 
 ## Contributing

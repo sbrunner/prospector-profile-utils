@@ -33,6 +33,7 @@ ruff:
       I: true # isort
       S: true # flake8-bandit
       D: true # pydocstyle
+    fix: true
   disabled:
     - S101 # Use of assert detected
     - SIM105 # suppressible-exception (slow code)

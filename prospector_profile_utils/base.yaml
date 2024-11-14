@@ -11,6 +11,8 @@ mypy:
   options:
     python-version: '3.9'
     ignore-missing-imports: true
+    warn-redundant-casts: true
+    warn-unused-ignores: true
     strict: true
 
 bandit:

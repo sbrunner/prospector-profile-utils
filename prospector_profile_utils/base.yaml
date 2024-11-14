@@ -17,7 +17,7 @@ mypy:
 
 bandit:
   run: true
-  disabled:
+  disable:
     - B101 # Use of assert detected.
 
 pyroma:

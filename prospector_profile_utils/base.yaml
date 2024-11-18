@@ -1,10 +1,13 @@
-strictness: veryhigh
+strictness: none
 
 max-line-length: 110
 
 pylint:
   enabled:
     - useless-suppression
+    # By default disabled by Prospector
+    - no-member
+    - no-name-in-module
 
 mypy:
   run: true

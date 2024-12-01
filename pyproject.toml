@@ -38,7 +38,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-prospector = "1.13.0"
+prospector = "1.13.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning", "poetry-plugin-tweak-dependencies-version"]

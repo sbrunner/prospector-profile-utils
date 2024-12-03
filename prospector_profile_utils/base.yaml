@@ -1,6 +1,7 @@
-strictness: none
+inherits:
+  - utils:base-all
 
-max-line-length: 110
+strictness: none
 
 pylint:
   enabled:
@@ -27,21 +28,13 @@ pyroma:
   run: true
 
 ruff:
-  run: true
   options:
     extend-select:
       E: true # Pycodestyle
       F: true # Pyflakes
-      UP: true # pyupgrade
-      B: true # flake8-bugbear
       SIM: true # flake8-simplify
-      I: true # isort
-      S: true # flake8-bandit
       D: true # pydocstyle
-    fix: true
   disable:
-    - S101 # Use of assert detected
-    - SIM105 # suppressible-exception (slow code)
     - D100 # Missing docstring in public module
     - D104 # Missing docstring in public package
     - D105 # Missing docstring in magic method
@@ -50,6 +43,3 @@ ruff:
     # Fix applicability: safe]
     # Incompatible with pydocstyle D213 Multi-line docstring summary should start at the second line.
     - D212
-
-mccabe:
-  run: false

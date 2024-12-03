@@ -19,6 +19,13 @@ inherits:
   - utils:unsafe
 ```
 
+It probide also an alternate base witch activate less strict checks:
+
+```yaml
+inherits:
+  - utils:base-less-strict
+```
+
 ## Contributing
 
 Install the pre-commit hooks:

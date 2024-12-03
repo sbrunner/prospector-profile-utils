@@ -23,6 +23,7 @@ bandit:
   run: true
   disable:
     - B101 # Use of assert detected.
+    - B404 # Consider possible security implications associated with the subprocess module.
 
 pyroma:
   run: true

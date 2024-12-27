@@ -1,7 +1,7 @@
 inherits:
   - utils:base-all
 
-strictness: none
+allow-shorthand: false
 
 pylint:
   enabled:

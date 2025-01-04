@@ -39,6 +39,7 @@ ruff:
     - D100 # Missing docstring in public module
     - D104 # Missing docstring in public package
     - D105 # Missing docstring in magic method
+    - D107 # Missing docstring in __init__
     - E501 # Line too long (should be done by formatter, length not configurable in prospector)
     # Multi-line docstring summary should start at the first line [See: https://docs.astral.sh/ruff/rules/multi-line-summary-first-line,
     # Fix applicability: safe]

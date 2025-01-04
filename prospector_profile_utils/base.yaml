@@ -44,3 +44,8 @@ ruff:
     # Fix applicability: safe]
     # Incompatible with pydocstyle D213 Multi-line docstring summary should start at the second line.
     - D212
+
+pydocstyle:
+  disable:
+    - D105 # Missing docstring in magic method
+    - D107 # Missing docstring in __init__

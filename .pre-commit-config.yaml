@@ -61,6 +61,7 @@ repos:
         files: |-
           (?x)^(
             ^ci/config\.yaml$
+            ||\.github/publish\.yaml
             |\.github/publish\.yaml
           )$
   - repo: https://github.com/renovatebot/pre-commit-hooks

@@ -13,18 +13,22 @@ Then, in your `.prospector.yaml` file, you can use the profiles like this:
 ```yaml
 inherits:
   - utils:base
-  - utils:fix
   - utils:c2cwsgiutils
   - utils:no-design-checks
-  - utils:unsafe
 ```
 
-It probide also an alternate base witch activate less strict checks:
+It provide also an alternate base witch activate less strict checks:
 
 ```yaml
 inherits:
   - utils:base-less-strict
 ```
+
+Other profiles:
+
+- `utils:fix`: Disable some not well working riles.
+- `utils:autofix`: Activate the auto fix options.
+- `utils:unsafe`: Activate the unsafe fix options.
 
 ## Contributing
 

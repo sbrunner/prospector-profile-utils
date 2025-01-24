@@ -1,7 +1,8 @@
 inherits:
   - utils:base-all
 
-allow-shorthand: false
+strictness: none
+member-warnings: true
 
 pylint:
   enabled:

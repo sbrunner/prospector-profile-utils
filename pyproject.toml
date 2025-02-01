@@ -31,7 +31,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-prospector = "1.13.3"
+prospector = "1.14.0"
 
 
 [tool.ruff]

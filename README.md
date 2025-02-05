@@ -24,11 +24,12 @@ inherits:
   - utils:base-less-strict
 ```
 
-Other profiles:
+Additional available profiles:
 
-- `utils:fix`: Disable some not well working riles.
-- `utils:autofix`: Activate the auto fix options.
-- `utils:unsafe`: Activate the unsafe fix options.
+- `utils:fix`: Disables specific rules that are known to have reliability issues.
+- `utils:autofix`: Enables automatic fixing capabilities for supported rules.
+- `utils:unsafe`: Enables aggressive auto-fixing options that may require manual review.
+- `utils:tests`: Specifically designed for test files validation, recommended to use in combination with the `utils:fix` profile.
 
 ## Contributing
 

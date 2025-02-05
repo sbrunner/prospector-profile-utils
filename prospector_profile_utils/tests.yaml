@@ -9,6 +9,7 @@ ruff:
       UP: true # pyupgrade
       I: true # isort
       B: true # flake8-bugbear
+      PT: true # flake8-pytest-style
   disable:
     - SIM105 # suppressible-exception (slow code)
 

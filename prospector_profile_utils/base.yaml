@@ -32,39 +32,7 @@ pyroma:
 ruff:
   options:
     extend-select:
-      F: true # Pyflakes
-      E: true # pycodestyle
-      W: true # pycodestyle
-      N: true # pep8-naming
-      D: true # pydocstyle
-      YTT: true # flake8-2020
-      ANN: true # flake8-annotations
-      ASYNC: true # flake8-async
-      A: true # flake8-builtins
-      C4: true # flake8-comprehensions
-      DTZ: true # flake8-datetimez
-      LOG: true # flake8-logging
-      G: true # flake8-logging-format
-      PIE: true # flake8-pie
-      PYI: true # flake8-pyi
-      PT: true # flake8-pytest-style
-      RET: true # flake8-return
-      SIM: true # flake8-simplify
-      TC: true # flake8-type-checking
-      INT: true # flake8-gettext
-      PTH: true # flake8-use-pathlib
-      ERA: true # eradicate
-      PD: true # pandas-vet
-      PGH: true # pygrep-hooks
-      PL: true # Pylint
-      TRY: true # tryceratops
-      NPY: true # NumPy-specific rules
-      FAST: true # FastAPI
-      AIR: true # Airflow
-      PERF: true # Perflint
-      FURB: true # refurb
-      DOC: true # pydoclint
-      RUF: true # Ruff-specific rules
+      ALL: true # Pyflakes
 
   disable:
     - D100 # Missing docstring in public module

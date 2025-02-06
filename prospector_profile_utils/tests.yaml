@@ -11,7 +11,7 @@ ruff:
       B: true # flake8-bugbear
       PT: true # flake8-pytest-style
   disable:
-    - SIM105 # suppressible-exception (slow code)
+    - E722 # Do not use bare `except`
 
 pylint:
   run: false

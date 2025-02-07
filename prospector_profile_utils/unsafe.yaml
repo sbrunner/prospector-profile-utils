@@ -1,4 +1,0 @@
-ruff:
-  options:
-    fix: true
-    unsafe-fixes: true

@@ -33,7 +33,7 @@ ruff:
   options:
     extend-select:
       ALL: true # Pyflakes
-    extend-safe-fixes:
+    extend-fixable:
       RET504: true # Unnecessary assignment to `unit` before `return` statement
 
   disable:

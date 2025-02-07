@@ -35,6 +35,7 @@ ruff:
       ALL: true # Pyflakes
 
   disable:
+    - FA # Function annotations
     - D100 # Missing docstring in public module
     - D104 # Missing docstring in public package
     - D105 # Missing docstring in magic method
@@ -44,6 +45,8 @@ ruff:
     # Fix applicability: safe]
     # Incompatible with pydocstyle D213 Multi-line docstring summary should start at the second line.
     - D212
+    - FBT001 # Boolean-typed positional argument in function definition
+    - FBT002 # Boolean default positional argument in function definition
 
 pydocstyle:
   disable:

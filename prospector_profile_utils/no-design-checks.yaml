@@ -20,3 +20,4 @@ ruff:
   disable:
     - PLR09 # too-many.*
     - C90 # Mccabe complexity
+    - PLR2004 # Magic value used in comparison, consider replacing with a constant variable

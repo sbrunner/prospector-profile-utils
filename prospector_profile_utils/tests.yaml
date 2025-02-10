@@ -12,6 +12,7 @@ ruff:
       PT: true # flake8-pytest-style
   disable:
     - E722 # Do not use bare `except`
+    - RUF100 # Unused `noqa` directive [Fix applicability: safe]
 
 pylint:
   run: false

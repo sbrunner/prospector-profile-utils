@@ -29,7 +29,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-prospector = ">=1.14.0"
+prospector = { "version" = ">=1.14.0", "extras" = ["bandit", "mypy", "ruff"] }
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning", "poetry-plugin-tweak-dependencies-version"]

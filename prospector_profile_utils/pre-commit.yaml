@@ -18,6 +18,10 @@ mypy:
     - index # Value of type "{}" is not indexable.
     - import-untyped # Library stubs not installed for "{}".
     - no-any-return # Returning Any from function declared to return "{}".
+  options:
+    strict: false
+    warn-redundant-casts: false
+    warn-unused-ignores: false
 
 bandit:
   run: false

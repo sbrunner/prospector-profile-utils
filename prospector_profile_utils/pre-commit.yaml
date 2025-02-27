@@ -1,3 +1,7 @@
+# The initial goal of the profile is to run the Ruff check with autofix on precommit.
+# But we also need mypy any pylint to parse the ignored codes on a line to make Prospector blending working.
+# Then we disable the other tools, and the rules that requires some other dependencies.
+
 inherits:
   - utils:autofix
 
@@ -13,6 +17,10 @@ mypy:
     - abstract # Cannot instantiate abstract class "{}" with abstract attributes "{}".
     - index # Value of type "{}" is not indexable.
     - import-untyped # Library stubs not installed for "{}".
+    - no-any-return # Returning Any from function declared to return "{}".
+
+bandit:
+  run: false
 
 dodgy:
   run: false

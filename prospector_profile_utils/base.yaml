@@ -53,6 +53,8 @@ ruff:
     - ANN401 # Dynamically typed expressions (typing.Any) are disallowed
     - EM101 # Exception must not use a string literal, assign to variable first
     - EM102 # Exception must not use an f-string literal, assign to variable first
+    # Annoying rule
+    - ERA001 # Found commented-out code)
 
 pydocstyle:
   disable:

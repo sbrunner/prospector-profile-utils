@@ -28,6 +28,7 @@ mypy:
     - return-value # Incompatible return value type (got "{}", expected "{}").
     - union-attr # Item "{}" of "{}" has no attribute "{}".
     - unused-ignore # Unused "type: ignore" comment.
+    - var-annotated # Need type annotation for "{}" (hint: "{}: {} = ...").
   options:
     strict: false
     warn-redundant-casts: false

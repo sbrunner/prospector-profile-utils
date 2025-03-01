@@ -28,7 +28,36 @@ Additional available profiles:
 
 - `utils:fix`: Disables specific rules that are known to have reliability issues.
 - `utils:autofix`: Enables automatic fixing capabilities for supported rules.
-- `utils:tests`: Specifically designed for test files validation, recommended to use in combination with the `utils:fix` profile.
+- `utils:tests`: Specifically designed for test files validation, recommended to use in combination with the `utils:fix` or `utils:pre-commit` profiles.
+- `utils:pre-commit`: Specifically designed for pre-commit hooks.
+
+## pre-commit profile
+
+I use the `utils:tests` and `utils:pre-commit` profiles with the following precommit configuration to have the ruff checks with auto-fix on all the files with a specific profile for the tests.
+
+```yaml
+repos:
+  - repo: https://github.com/PyCQA/prospector
+    rev: v<rev>
+    hooks:
+      - id: prospector
+        args:
+          - --die-on-tool-error
+          - --output-format=pylint
+          - --profile=utils:pre-commit
+          - --profile=.prospector.yaml
+        additional_dependencies:
+          - prospector-profile-duplicated==<rev> # pypi
+          - prospector-profile-utils==<rev> # pypi
+      - id: prospector
+        args:
+          - --die-on-tool-error
+          - --output-format=pylint
+          - --profile=utils:pre-commit
+          - --profile=utils:tests
+        additional_dependencies:
+          - prospector-profile-utils==<rev> # pypi
+```
 
 ## Contributing
 

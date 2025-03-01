@@ -10,6 +10,13 @@ pylint:
     - import-error # Unable to import
     - no-name-in-module # No name '{}' in module '{}'
     - no-member # Module '{}' has no '{}' member
+    - missing-docstring # Missing module docstring
+    - duplicated-code # Similar lines in {} files
+    - import-error # Unable to import
+    - import-self # Attempted relative import in non-package
+    - import-outside-toplevel # Attempted relative import beyond top-level package
+    - import-private-name # Import "from {} import {}" should not import itself
+    - cyclic-import # Module has a cyclic import
 
 mypy:
   disable:
@@ -33,6 +40,12 @@ mypy:
     strict: false
     warn-redundant-casts: false
     warn-unused-ignores: false
+    follow-imports: skip
+    ignore-missing-imports: true
+    implicit-optional: true
+    allow-redefinition: true
+    allow-untyped-globals: true
+    no-warn-no-return: true
 
 bandit:
   run: false

@@ -18,6 +18,7 @@ pylint:
     - import-private-name # Import "from {} import {}" should not import itself
     - cyclic-import # Module has a cyclic import
     - invalid-name # Invalid variable name "{}"
+    - unsubscriptable-object # Value of type "{}" is unsubscriptable
 
 mypy:
   disable:
@@ -37,6 +38,7 @@ mypy:
     - union-attr # Item "{}" of "{}" has no attribute "{}".
     - unused-ignore # Unused "type: ignore" comment.
     - var-annotated # Need type annotation for "{}" (hint: "{}: {} = ...").
+    - valid-type # Variable "{}" is not valid as a type.
   options:
     strict: false
     warn-redundant-casts: false

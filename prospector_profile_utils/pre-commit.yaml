@@ -17,6 +17,7 @@ pylint:
     - import-outside-toplevel # Attempted relative import beyond top-level package
     - import-private-name # Import "from {} import {}" should not import itself
     - cyclic-import # Module has a cyclic import
+    - invalid-name # Invalid variable name "{}"
 
 mypy:
   disable:

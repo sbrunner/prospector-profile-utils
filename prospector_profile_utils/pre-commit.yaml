@@ -39,6 +39,7 @@ mypy:
     - unused-ignore # Unused "type: ignore" comment.
     - var-annotated # Need type annotation for "{}" (hint: "{}: {} = ...").
     - valid-type # Variable "{}" is not valid as a type.
+    - no-redef # Name "{}" already defined (possibly by an import).
   options:
     strict: false
     warn-redundant-casts: false

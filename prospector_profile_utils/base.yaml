@@ -25,6 +25,8 @@ bandit:
   disable:
     - B101 # Use of assert detected.
     - B404 # Consider possible security implications associated with the subprocess module.
+    # Prefer: TD003(ruff): Missing issue link for this TODO
+    - fixme # TODO fix for matrix_identifier = resolution
 
 pyroma:
   run: true
@@ -50,10 +52,13 @@ ruff:
     - ANN401 # Dynamically typed expressions (typing.Any) are disallowed
     - EM101 # Exception must not use a string literal, assign to variable first
     - EM102 # Exception must not use an f-string literal, assign to variable first
+    - TD002 # Missing author in TODO
     # Annoying rule
     - ERA001 # Found commented-out code)
     # No more active on Python version >= 3.11
     - PERF203 # try-except-in-loop
+    # Prefer: TD003(ruff): Missing issue link for this TODO
+    - FIX002 # Line contains TODO, consider resolving the issue
 
 pydocstyle:
   disable:

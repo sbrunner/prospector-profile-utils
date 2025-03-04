@@ -10,6 +10,7 @@ pylint:
     # By default disabled by Prospector
     - no-member
     - no-name-in-module
+  disable:
     # Prefer: TD003(ruff): Missing issue link for this TODO
     - fixme # TODO fix for matrix_identifier = resolution
 

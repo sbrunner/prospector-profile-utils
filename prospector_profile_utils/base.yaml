@@ -32,9 +32,7 @@ pyroma:
 ruff:
   options:
     extend-select:
-      ALL: true # Pyflakes
-    extend-fixable:
-      RET504: true # Unnecessary assignment to `unit` before `return` statement
+      ALL: true
 
   disable:
     - FA # Function annotations
@@ -44,7 +42,6 @@ ruff:
     - D107 # Missing docstring in __init__
     - E501 # Line too long (should be done by formatter, length not configurable in prospector)
     # Multi-line docstring summary should start at the first line [See: https://docs.astral.sh/ruff/rules/multi-line-summary-first-line,
-    # Fix applicability: safe]
     # Incompatible with pydocstyle D213 Multi-line docstring summary should start at the second line.
     - D212
     - FBT001 # Boolean-typed positional argument in function definition
@@ -55,6 +52,8 @@ ruff:
     - EM102 # Exception must not use an f-string literal, assign to variable first
     # Annoying rule
     - ERA001 # Found commented-out code)
+    # No more active on Python version >= 3.11
+    - PERF203 # try-except-in-loop
 
 pydocstyle:
   disable:

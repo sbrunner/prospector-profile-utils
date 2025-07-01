@@ -18,3 +18,7 @@ ruff:
   disable:
     - S101 # Use of assert detected
     - SIM105 # suppressible-exception (slow code)
+
+bandit:
+  disable:
+    - B603 # subprocess call - check for execution of untrusted input. (The Ruff rule is better)

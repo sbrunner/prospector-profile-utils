@@ -4,9 +4,6 @@ pylint:
   enabled:
     - useless-suppression
 
-mccabe:
-  run: false
-
 ruff:
   run: true
   options:
@@ -20,5 +17,21 @@ ruff:
     - SIM105 # suppressible-exception (slow code)
 
 bandit:
+  run: false
   disable:
     - B603 # subprocess call - check for execution of untrusted input. (The Ruff rule is better)
+
+mccabe:
+  run: false
+
+dodgy:
+  run: false
+
+pycodestyle:
+  run: false
+
+pyflakes:
+  run: false
+
+pyroma:
+  run: false

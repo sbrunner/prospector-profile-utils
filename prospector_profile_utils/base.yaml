@@ -13,6 +13,9 @@ pylint:
   disable:
     # Prefer: TD003(ruff): Missing issue link for this TODO
     - fixme # TODO fix for matrix_identifier = resolution
+    - subprocess-run-check # Use the Ruff version instead
+    - broad-except # Use the Ruff version instead
+    - invalid-name # Use the Ruff version instead
 
 mypy:
   run: true

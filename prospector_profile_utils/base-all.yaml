@@ -1,5 +1,16 @@
 max-line-length: 110
 
+ignore-paths:
+  - .git
+  - .ruff_cache
+  - .mypy_cache
+
+ignore-patterns:
+  - .ruff_cache/.*
+  - .*/.ruff_cache/.*
+  - .mypy_cache/.*
+  - .*/.mypy_cache/.*
+
 pylint:
   enabled:
     - useless-suppression

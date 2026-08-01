@@ -9,6 +9,7 @@ convention = "numpy"
 version = "0.0.0"
 name = "prospector-profile-utils"
 description = "Some utility Prospector profiles."
+authors = [{name = "Stéphane Brunner",email = "stephane.brunner@gmail.com"}]
 
 [tool.poetry.dependencies]
 prospector = { version = ">=1.14.0", extras = ["with_mypy", "with_ruff"] }

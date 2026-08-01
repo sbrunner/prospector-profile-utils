@@ -7,6 +7,8 @@ convention = "numpy"
 
 [tool.poetry]
 version = "0.0.0"
+name = "prospector-profile-utils"
+description = "Some utility Prospector profiles."
 
 [tool.poetry.dependencies]
 prospector = { version = ">=1.14.0", extras = ["with_mypy", "with_ruff"] }

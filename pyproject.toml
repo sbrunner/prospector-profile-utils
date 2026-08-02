@@ -7,6 +7,9 @@ convention = "numpy"
 
 [tool.poetry]
 version = "0.0.0"
+name = "prospector-profile-utils"
+description = "Some utility Prospector profiles."
+authors = ["Stéphane Brunner <stephane.brunner@gmail.com>"]
 
 [tool.poetry.dependencies]
 prospector = { version = ">=1.14.0", extras = ["with_mypy", "with_ruff"] }
@@ -57,5 +60,5 @@ repository = "https://github.com/sbrunner/prospector-profile-utils"
 "Bug Tracker" = "https://github.com/sbrunner/prospector-profile-utils/issues"
 
 [build-system]
-requires = ["poetry-core==2.0.1", "poetry-dynamic-versioning==1.10.0", "poetry-plugin-tweak-dependencies-version==1.5.6"]
+requires = ["poetry-core==2.4.1", "poetry-dynamic-versioning==1.10.0", "poetry-plugin-tweak-dependencies-version==1.5.6"]
 build-backend = "poetry.core.masonry.api"

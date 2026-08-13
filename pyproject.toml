@@ -13,8 +13,6 @@ authors = ["Stéphane Brunner <stephane.brunner@gmail.com>"]
 
 [tool.poetry.dependencies]
 prospector = { version = ">=1.14.0", extras = ["with_mypy", "with_ruff"] }
-ruff = "0.15.7"
-pylint = "4.0.5"
 
 [tool.poetry-dynamic-versioning]
 enable = true
